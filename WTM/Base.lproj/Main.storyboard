@@ -101,7 +101,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="bAN-RZ-kdO" firstAttribute="top" secondItem="z0D-uM-twm" secondAttribute="bottom" priority="1" constant="100" id="Hfi-KW-Ik8"/>
+                            <constraint firstItem="bAN-RZ-kdO" firstAttribute="top" secondItem="z0D-uM-twm" secondAttribute="bottom" priority="1" constant="-100" id="Hfi-KW-Ik8"/>
                             <constraint firstItem="bAN-RZ-kdO" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="RLa-dc-Sfe"/>
                             <constraint firstItem="CdB-E7-lac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SIV-14-1EE"/>
                             <constraint firstItem="CdB-E7-lac" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aYi-fV-vPe"/>
@@ -184,10 +184,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOd-en-QHN">
-                                <rect key="frame" x="0.0" y="24" width="343" height="476"/>
+                                <rect key="frame" x="0.0" y="28" width="343" height="472"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4y-2U-gzV">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="500"/>
                                         <subviews>
                                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-oj-pFh">
                                                 <rect key="frame" x="0.0" y="67" width="343" height="150"/>
@@ -287,7 +287,7 @@
                                         <constraints>
                                             <constraint firstItem="210-jJ-6S5" firstAttribute="leading" secondItem="D4y-2U-gzV" secondAttribute="leading" constant="16" id="1Et-YY-PJr"/>
                                             <constraint firstItem="W3j-qO-xsu" firstAttribute="leading" secondItem="D4y-2U-gzV" secondAttribute="leading" constant="16" id="DUZ-gX-qIZ"/>
-                                            <constraint firstAttribute="height" constant="300" id="OTx-cd-bwO"/>
+                                            <constraint firstAttribute="height" constant="500" id="OTx-cd-bwO"/>
                                             <constraint firstItem="Nl5-Pe-bZF" firstAttribute="leading" secondItem="D4y-2U-gzV" secondAttribute="leading" constant="16" id="RGq-Gu-iCO"/>
                                             <constraint firstItem="Nl5-Pe-bZF" firstAttribute="top" secondItem="D4y-2U-gzV" secondAttribute="top" constant="4" id="TN2-r0-q47"/>
                                             <constraint firstItem="210-jJ-6S5" firstAttribute="top" secondItem="W3j-qO-xsu" secondAttribute="bottom" constant="2" id="ZjC-E9-ifI"/>
@@ -314,7 +314,7 @@
                             <constraint firstItem="oOd-en-QHN" firstAttribute="trailing" secondItem="Yjx-f9-O4g" secondAttribute="trailing" id="4Rb-Zk-T4m"/>
                             <constraint firstItem="5SU-1t-baJ" firstAttribute="top" secondItem="Yjx-f9-O4g" secondAttribute="top" constant="14" id="B3z-dA-1dl"/>
                             <constraint firstItem="5SU-1t-baJ" firstAttribute="centerX" secondItem="Yjx-f9-O4g" secondAttribute="centerX" id="Fe3-CN-3nP"/>
-                            <constraint firstItem="oOd-en-QHN" firstAttribute="top" secondItem="5SU-1t-baJ" secondAttribute="bottom" constant="6" id="KG4-2w-RTh"/>
+                            <constraint firstItem="oOd-en-QHN" firstAttribute="top" secondItem="5SU-1t-baJ" secondAttribute="bottom" constant="10" id="KG4-2w-RTh"/>
                             <constraint firstItem="oOd-en-QHN" firstAttribute="bottom" secondItem="Yjx-f9-O4g" secondAttribute="bottom" id="U7g-BE-wBP"/>
                             <constraint firstItem="oOd-en-QHN" firstAttribute="leading" secondItem="Yjx-f9-O4g" secondAttribute="leading" id="wa2-Pp-u8f"/>
                         </constraints>

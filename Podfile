@@ -6,7 +6,11 @@ target 'WTM' do
   use_frameworks!
 
   # Pods for WTM
-  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Functions'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
 end
