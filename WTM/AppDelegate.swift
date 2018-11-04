@@ -15,6 +15,8 @@ import FirebaseFunctions
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    
+    static var currentUser: UserX?
     static var functions = Functions.functions()
     static var auth = Auth.auth()
     static var database = Database.database()
@@ -23,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyCNoNztzD3OXI3cZ8wpaKU63gJp8d2bOpo")
         GMSPlacesClient.provideAPIKey("AIzaSyCNoNztzD3OXI3cZ8wpaKU63gJp8d2bOpo")
+        
+        if let name = UserDefaults.standard.string(forKey: "name"), let user = AppDelegate.auth.currentUser {
+            AppDelegate.currentUser = UserX(uid: user.uid, email: user.email!, name: name)
+        }
         return true
     }
 
