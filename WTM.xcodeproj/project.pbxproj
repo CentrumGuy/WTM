@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429F44E15C783BE57393D0E5 /* Pods_WTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FBF54F8A77616EC5B947F4 /* Pods_WTM.framework */; };
+		C71D7462218E907300828557 /* EventInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7461218E907300828557 /* EventInformationView.swift */; };
 		C7461DA9218E64A800397311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DA8218E64A800397311 /* AppDelegate.swift */; };
-		C7461DAB218E64A800397311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DAA218E64A800397311 /* ViewController.swift */; };
+		C7461DAB218E64A800397311 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DAA218E64A800397311 /* MainView.swift */; };
 		C7461DAE218E64A800397311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7461DAC218E64A800397311 /* Main.storyboard */; };
 		C7461DB0218E64A900397311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7461DAF218E64A900397311 /* Assets.xcassets */; };
 		C7461DB3218E64A900397311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7461DB1218E64A900397311 /* LaunchScreen.storyboard */; };
+		C7461DCF218E6B4500397311 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DCE218E6B4500397311 /* GroupCell.swift */; };
+		C7461DD1218E6C3500397311 /* UIGradientImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBF218E64DF00397311 /* UIGradientImage.swift */; };
+		C7461DD2218E6C3900397311 /* UIPickerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC0218E64DF00397311 /* UIPickerX.swift */; };
+		C7461DD3218E6C3B00397311 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC1218E64DF00397311 /* UIViewXRadialGradient.swift */; };
+		C7461DD4218E6C3D00397311 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC2218E64DF00397311 /* UITextFieldX.swift */; };
+		C7461DD5218E6C3F00397311 /* UIScrollViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC3218E64DF00397311 /* UIScrollViewX.swift */; };
+		C7461DD6218E6C4100397311 /* UIShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC4218E64DF00397311 /* UIShadowView.swift */; };
+		C7461DDF218E6C4900397311 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC5218E64DF00397311 /* UIButtonX.swift */; };
+		C7461DE0218E6C4900397311 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC6218E64DF00397311 /* UILabelX.swift */; };
+		C7461DE1218E6C4900397311 /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC7218E64DF00397311 /* UIViewAnchorPoint.swift */; };
+		C7461DE2218E6C4900397311 /* UIGradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC8218E64DF00397311 /* UIGradientLabel.swift */; };
+		C7461DE3218E6C4900397311 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DC9218E64DF00397311 /* UIViewControllerX.swift */; };
+		C7461DE4218E6C4900397311 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DCA218E64DF00397311 /* UIImageViewX.swift */; };
+		C7461DE5218E6C4900397311 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DCB218E64DF00397311 /* UIViewX.swift */; };
+		C7461DE6218E6C4900397311 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DCC218E64DF00397311 /* UIVisualEffectViewX.swift */; };
+		C7461DE7218E6C4900397311 /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DCD218E64DF00397311 /* UISliderX.swift */; };
+		C7461DE8218E6C4E00397311 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBB218E64DF00397311 /* ColorScheme.swift */; };
+		C7461DE9218E6C4E00397311 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBC218E64DF00397311 /* Extensions.swift */; };
+		C7461DEA218E6C4E00397311 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBD218E64DF00397311 /* ViewUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17FBF54F8A77616EC5B947F4 /* Pods_WTM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74028135142FE0727F1113B9 /* Pods-WTM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTM/Pods-WTM.debug.xcconfig"; sourceTree = "<group>"; };
+		976FE2E4A9C0FE223C566272 /* Pods-WTM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTM.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTM/Pods-WTM.release.xcconfig"; sourceTree = "<group>"; };
+		C71D7461218E907300828557 /* EventInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationView.swift; sourceTree = "<group>"; };
 		C7461DA5218E64A800397311 /* WTM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7461DA8218E64A800397311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7461DAA218E64A800397311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7461DAA218E64A800397311 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C7461DAD218E64A800397311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7461DAF218E64A900397311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7461DB2218E64A900397311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7461DB4218E64A900397311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7461DBB218E64DF00397311 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		C7461DBC218E64DF00397311 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C7461DBD218E64DF00397311 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		C7461DBF218E64DF00397311 /* UIGradientImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientImage.swift; sourceTree = "<group>"; };
+		C7461DC0218E64DF00397311 /* UIPickerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerX.swift; sourceTree = "<group>"; };
+		C7461DC1218E64DF00397311 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		C7461DC2218E64DF00397311 /* UITextFieldX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		C7461DC3218E64DF00397311 /* UIScrollViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewX.swift; sourceTree = "<group>"; };
+		C7461DC4218E64DF00397311 /* UIShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIShadowView.swift; sourceTree = "<group>"; };
+		C7461DC5218E64DF00397311 /* UIButtonX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		C7461DC6218E64DF00397311 /* UILabelX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		C7461DC7218E64DF00397311 /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		C7461DC8218E64DF00397311 /* UIGradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientLabel.swift; sourceTree = "<group>"; };
+		C7461DC9218E64DF00397311 /* UIViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		C7461DCA218E64DF00397311 /* UIImageViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		C7461DCB218E64DF00397311 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		C7461DCC218E64DF00397311 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		C7461DCD218E64DF00397311 /* UISliderX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		C7461DCE218E6B4500397311 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429F44E15C783BE57393D0E5 /* Pods_WTM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DB1587F1B5FDB7F1014846A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17FBF54F8A77616EC5B947F4 /* Pods_WTM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7461D9C218E64A800397311 = {
 			isa = PBXGroup;
 			children = (
 				C7461DA7218E64A800397311 /* WTM */,
 				C7461DA6218E64A800397311 /* Products */,
+				EB886F62B5576EA428850F65 /* Pods */,
+				1DB1587F1B5FDB7F1014846A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +110,58 @@
 			isa = PBXGroup;
 			children = (
 				C7461DA8218E64A800397311 /* AppDelegate.swift */,
-				C7461DAA218E64A800397311 /* ViewController.swift */,
+				C7461DBE218E64DF00397311 /* DesignableX */,
+				C7461DBA218E64DF00397311 /* Utils */,
+				C7461DAA218E64A800397311 /* MainView.swift */,
+				C71D7461218E907300828557 /* EventInformationView.swift */,
+				C7461DCE218E6B4500397311 /* GroupCell.swift */,
 				C7461DAC218E64A800397311 /* Main.storyboard */,
 				C7461DAF218E64A900397311 /* Assets.xcassets */,
 				C7461DB1218E64A900397311 /* LaunchScreen.storyboard */,
 				C7461DB4218E64A900397311 /* Info.plist */,
 			);
 			path = WTM;
+			sourceTree = "<group>";
+		};
+		C7461DBA218E64DF00397311 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C7461DBB218E64DF00397311 /* ColorScheme.swift */,
+				C7461DBC218E64DF00397311 /* Extensions.swift */,
+				C7461DBD218E64DF00397311 /* ViewUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C7461DBE218E64DF00397311 /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				C7461DBF218E64DF00397311 /* UIGradientImage.swift */,
+				C7461DC0218E64DF00397311 /* UIPickerX.swift */,
+				C7461DC1218E64DF00397311 /* UIViewXRadialGradient.swift */,
+				C7461DC2218E64DF00397311 /* UITextFieldX.swift */,
+				C7461DC3218E64DF00397311 /* UIScrollViewX.swift */,
+				C7461DC4218E64DF00397311 /* UIShadowView.swift */,
+				C7461DC5218E64DF00397311 /* UIButtonX.swift */,
+				C7461DC6218E64DF00397311 /* UILabelX.swift */,
+				C7461DC7218E64DF00397311 /* UIViewAnchorPoint.swift */,
+				C7461DC8218E64DF00397311 /* UIGradientLabel.swift */,
+				C7461DC9218E64DF00397311 /* UIViewControllerX.swift */,
+				C7461DCA218E64DF00397311 /* UIImageViewX.swift */,
+				C7461DCB218E64DF00397311 /* UIViewX.swift */,
+				C7461DCC218E64DF00397311 /* UIVisualEffectViewX.swift */,
+				C7461DCD218E64DF00397311 /* UISliderX.swift */,
+			);
+			path = DesignableX;
+			sourceTree = "<group>";
+		};
+		EB886F62B5576EA428850F65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74028135142FE0727F1113B9 /* Pods-WTM.debug.xcconfig */,
+				976FE2E4A9C0FE223C566272 /* Pods-WTM.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7461DB7218E64AA00397311 /* Build configuration list for PBXNativeTarget "WTM" */;
 			buildPhases = (
+				F97F9CBC89E886BC688A0600 /* [CP] Check Pods Manifest.lock */,
 				C7461DA1218E64A800397311 /* Sources */,
 				C7461DA2218E64A800397311 /* Frameworks */,
 				C7461DA3218E64A800397311 /* Resources */,
+				0A6271EF6645BD31E3E834D7 /* [CP] Embed Pods Frameworks */,
+				E07E7A24EABE6C0ABB6DFB61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +233,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A6271EF6645BD31E3E834D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WTM/Pods-WTM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTM/Pods-WTM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07E7A24EABE6C0ABB6DFB61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WTM/Pods-WTM-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTM/Pods-WTM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97F9CBC89E886BC688A0600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7461DA1218E64A800397311 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7461DAB218E64A800397311 /* ViewController.swift in Sources */,
+				C71D7462218E907300828557 /* EventInformationView.swift in Sources */,
+				C7461DE6218E6C4900397311 /* UIVisualEffectViewX.swift in Sources */,
+				C7461DE1218E6C4900397311 /* UIViewAnchorPoint.swift in Sources */,
+				C7461DE0218E6C4900397311 /* UILabelX.swift in Sources */,
+				C7461DE7218E6C4900397311 /* UISliderX.swift in Sources */,
+				C7461DD1218E6C3500397311 /* UIGradientImage.swift in Sources */,
+				C7461DE8218E6C4E00397311 /* ColorScheme.swift in Sources */,
+				C7461DCF218E6B4500397311 /* GroupCell.swift in Sources */,
+				C7461DE2218E6C4900397311 /* UIGradientLabel.swift in Sources */,
+				C7461DD2218E6C3900397311 /* UIPickerX.swift in Sources */,
+				C7461DE4218E6C4900397311 /* UIImageViewX.swift in Sources */,
+				C7461DD3218E6C3B00397311 /* UIViewXRadialGradient.swift in Sources */,
+				C7461DD4218E6C3D00397311 /* UITextFieldX.swift in Sources */,
+				C7461DE5218E6C4900397311 /* UIViewX.swift in Sources */,
+				C7461DAB218E64A800397311 /* MainView.swift in Sources */,
+				C7461DEA218E6C4E00397311 /* ViewUtils.swift in Sources */,
+				C7461DE3218E6C4900397311 /* UIViewControllerX.swift in Sources */,
+				C7461DE9218E6C4E00397311 /* Extensions.swift in Sources */,
+				C7461DDF218E6C4900397311 /* UIButtonX.swift in Sources */,
+				C7461DD5218E6C3F00397311 /* UIScrollViewX.swift in Sources */,
+				C7461DD6218E6C4100397311 /* UIShadowView.swift in Sources */,
 				C7461DA9218E64A800397311 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +464,7 @@
 		};
 		C7461DB8218E64AA00397311 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74028135142FE0727F1113B9 /* Pods-WTM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +483,7 @@
 		};
 		C7461DB9218E64AA00397311 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976FE2E4A9C0FE223C566272 /* Pods-WTM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
