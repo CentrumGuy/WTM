@@ -36,6 +36,14 @@ class Event {
     static func create (groupId: String, name: String, location: String, latitude: Double, longitude: Double, description: String, images: [UIImage], completion: @escaping (Event?) -> ()) {
         AppDelegate.functions.httpsCallable("addEvent").call(["id": groupId, "name": name, "display_location": location, "latitude": latitude, "longitude": longitude, "description": description, "image_count": images.count]) { (result, error) in
             print("given id", result?.data as? [String: Any])
+            
+            let group = DispatchGroup()
+            group.enter()
+            var count = 0
+            for i in 0..<images.count {
+                AppDelegate.storage.reference().child("groups")
+            }
+            
             if let id = (result?.data as? [String: Any])?["id"] as? String {
                 let event = Event(eventId: id, groupId: groupId, name: name, location: location, latitude: latitude, longitude: longitude, description: description, images: images)
                 completion(event)
