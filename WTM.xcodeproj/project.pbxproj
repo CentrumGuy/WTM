@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		429F44E15C783BE57393D0E5 /* Pods_WTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FBF54F8A77616EC5B947F4 /* Pods_WTM.framework */; };
+		6640371D218ED1DB008A5166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6640371C218ED1DB008A5166 /* Assets.xcassets */; };
+		66403721218ED1F6008A5166 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640371F218ED1F6008A5166 /* SignIn.swift */; };
+		66403722218ED1F6008A5166 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66403720218ED1F6008A5166 /* SignIn.storyboard */; };
 		C71D7462218E907300828557 /* EventInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7461218E907300828557 /* EventInformationView.swift */; };
 		C7461DA9218E64A800397311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DA8218E64A800397311 /* AppDelegate.swift */; };
 		C7461DAB218E64A800397311 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DAA218E64A800397311 /* MainView.swift */; };
 		C7461DAE218E64A800397311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7461DAC218E64A800397311 /* Main.storyboard */; };
-		C7461DB0218E64A900397311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7461DAF218E64A900397311 /* Assets.xcassets */; };
 		C7461DB3218E64A900397311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7461DB1218E64A900397311 /* LaunchScreen.storyboard */; };
 		C7461DCF218E6B4500397311 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DCE218E6B4500397311 /* GroupCell.swift */; };
 		C7461DD1218E6C3500397311 /* UIGradientImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBF218E64DF00397311 /* UIGradientImage.swift */; };
@@ -39,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		17FBF54F8A77616EC5B947F4 /* Pods_WTM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6640371C218ED1DB008A5166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6640371F218ED1F6008A5166 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		66403720218ED1F6008A5166 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		74028135142FE0727F1113B9 /* Pods-WTM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTM/Pods-WTM.debug.xcconfig"; sourceTree = "<group>"; };
 		976FE2E4A9C0FE223C566272 /* Pods-WTM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTM.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTM/Pods-WTM.release.xcconfig"; sourceTree = "<group>"; };
 		C71D7461218E907300828557 /* EventInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationView.swift; sourceTree = "<group>"; };
@@ -46,7 +51,6 @@
 		C7461DA8218E64A800397311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7461DAA218E64A800397311 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C7461DAD218E64A800397311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C7461DAF218E64A900397311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7461DB2218E64A900397311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7461DB4218E64A900397311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7461DBB218E64DF00397311 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6640371E218ED1E4008A5166 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				66403720218ED1F6008A5166 /* SignIn.storyboard */,
+				6640371F218ED1F6008A5166 /* SignIn.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
 		C7461D9C218E64A800397311 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C7461DA8218E64A800397311 /* AppDelegate.swift */,
+				6640371E218ED1E4008A5166 /* Sign In */,
 				C76C7232218EC16500FB1B36 /* API */,
 				C7461DBE218E64DF00397311 /* DesignableX */,
 				C7461DBA218E64DF00397311 /* Utils */,
@@ -121,7 +135,7 @@
 				C71D7461218E907300828557 /* EventInformationView.swift */,
 				C7461DCE218E6B4500397311 /* GroupCell.swift */,
 				C7461DAC218E64A800397311 /* Main.storyboard */,
-				C7461DAF218E64A900397311 /* Assets.xcassets */,
+				6640371C218ED1DB008A5166 /* Assets.xcassets */,
 				C7461DB1218E64A900397311 /* LaunchScreen.storyboard */,
 				C7F76C08218EC22700E2535E /* GoogleService-Info.plist */,
 				C7461DB4218E64A900397311 /* Info.plist */,
@@ -240,8 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7461DB3218E64A900397311 /* LaunchScreen.storyboard in Resources */,
+				66403722218ED1F6008A5166 /* SignIn.storyboard in Resources */,
 				C7F76C09218EC22700E2535E /* GoogleService-Info.plist in Resources */,
-				C7461DB0218E64A900397311 /* Assets.xcassets in Resources */,
+				6640371D218ED1DB008A5166 /* Assets.xcassets in Resources */,
 				C7461DAE218E64A800397311 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +340,7 @@
 				C7461DE7218E6C4900397311 /* UISliderX.swift in Sources */,
 				C7461DD1218E6C3500397311 /* UIGradientImage.swift in Sources */,
 				C7461DE8218E6C4E00397311 /* ColorScheme.swift in Sources */,
+				66403721218ED1F6008A5166 /* SignIn.swift in Sources */,
 				C7461DCF218E6B4500397311 /* GroupCell.swift in Sources */,
 				C7461DE2218E6C4900397311 /* UIGradientLabel.swift in Sources */,
 				C7461DD2218E6C3900397311 /* UIPickerX.swift in Sources */,
@@ -488,8 +504,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SKLTWZD2Z5;
+				DEVELOPMENT_TEAM = 9RHT3JYW75;
 				INFOPLIST_FILE = WTM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,8 +524,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SKLTWZD2Z5;
+				DEVELOPMENT_TEAM = 9RHT3JYW75;
 				INFOPLIST_FILE = WTM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
