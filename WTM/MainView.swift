@@ -53,6 +53,9 @@ class MainView: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     override func viewDidLayoutSubviews() {
         initialTopDistance = ViewUtils.distance(view1: eventContainer, edge1: .Top, view2: groupBar, edge2: .Bottom, parent: view)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         eventTopConstraint.constant = initialTopDistance
     }
 
@@ -67,6 +70,7 @@ class MainView: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     var oldEventTop: CGFloat = 0
     @IBAction func pannedView(_ sender: UIPanGestureRecognizer) {
+        eventTopConstraint.constant = -150
         let translation = sender.translation(in: eventContainer)
         
         if sender.state == .began {
@@ -82,14 +86,14 @@ class MainView: UIViewController, UICollectionViewDelegate, UICollectionViewData
         case .movingToTop:
             let futureOffset = oldEventTop + translation.y
             if futureOffset < 0 {
-                let offset = -1 * futureOffset
-                let toSet = futureOffset - (offset / 0.9)
-                print(toSet)
+                let offset = futureOffset
+                let toSet = eventTopConstraint.constant - (offset / 1.1)
                 eventTopConstraint.constant = -1 * toSet
                 break
             }
             
-            eventTopConstraint.constant = futureOffset
+            eventTopConstraint.constant = -150
+            view.layoutIfNeeded()
             break
         case .dismissed:
             break

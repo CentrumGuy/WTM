@@ -90,8 +90,9 @@
                             </collectionView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAN-RZ-kdO">
                                 <rect key="frame" x="8" y="539" width="359" height="128"/>
+                                <rect key="frame" x="8" y="517" width="359" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" priority="10" constant="128" id="hJd-aa-mMw"/>
+                                    <constraint firstAttribute="height" priority="10" constant="150" id="zsh-qB-61C"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="EdQ-ce-Ceu" kind="embed" id="6k0-zj-qoq"/>
@@ -101,9 +102,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="bAN-RZ-kdO" firstAttribute="top" secondItem="z0D-uM-twm" secondAttribute="bottom" priority="1" constant="100" id="Hfi-KW-Ik8"/>
                             <constraint firstItem="bAN-RZ-kdO" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="RLa-dc-Sfe"/>
                             <constraint firstItem="CdB-E7-lac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SIV-14-1EE"/>
-                            <constraint firstItem="bAN-RZ-kdO" firstAttribute="top" secondItem="z0D-uM-twm" secondAttribute="bottom" priority="1" constant="100" id="TWx-Yu-Ib9"/>
                             <constraint firstItem="CdB-E7-lac" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aYi-fV-vPe"/>
                             <constraint firstItem="z0D-uM-twm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dOC-PI-eyE"/>
                             <constraint firstItem="CdB-E7-lac" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="ess-8o-MPw"/>
@@ -121,8 +122,8 @@
                     <navigationItem key="navigationItem" title="Groups" id="gpD-Qh-V5s"/>
                     <connections>
                         <outlet property="eventContainer" destination="bAN-RZ-kdO" id="TbT-QB-h7Z"/>
-                        <outlet property="eventHeightConstraint" destination="hJd-aa-mMw" id="xaX-YQ-n20"/>
-                        <outlet property="eventTopConstraint" destination="TWx-Yu-Ib9" id="hEN-6q-jAA"/>
+                        <outlet property="eventHeightConstraint" destination="zsh-qB-61C" id="Y83-Pq-Ovz"/>
+                        <outlet property="eventTopConstraint" destination="Hfi-KW-Ik8" id="2hC-kt-KDB"/>
                         <outlet property="groupBar" destination="z0D-uM-twm" id="ibr-f9-wzx"/>
                         <outlet property="mapView" destination="CdB-E7-lac" id="ceG-iP-INP"/>
                     </connections>
