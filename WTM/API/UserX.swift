@@ -41,6 +41,27 @@ class UserX {
         }
     }
     
+    static func signIn(email: String, password: String, completion: ((UserX?) -> ())? = nil) {
+        AppDelegate.auth.signIn(withEmail: email, password: password) { (result, error) in
+            if let user = result?.user {
+                let uid = user.uid
+                AppDelegate.database.reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let name = snapshot.childSnapshot(forPath: "name").value as? String {
+                        let user = UserX(uid: uid, email: email, name: name)
+                        UserDefaults.standard.set(name, forKey: "name")
+                        completion?(user)
+                        return
+                    }
+                    
+                    completion?(nil)
+                })
+                return
+            }
+            
+            completion?(nil)
+        }
+    }
+    
     static func get(completion: @escaping (UserX?) -> ()) {
         if let user = AppDelegate.auth.currentUser {
             AppDelegate.database.reference().child(user.uid).observe(.value) { (snapshot) in

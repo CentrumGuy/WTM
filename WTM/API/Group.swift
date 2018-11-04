@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseFunctions
 
 class Group {
     let groupId: String!
@@ -31,6 +32,12 @@ class Group {
             }
             
             completion(nil)
+        }
+    }
+    
+    func join(completion: @escaping (HTTPSCallableResult?, Error?) -> ()) {
+        AppDelegate.functions.httpsCallable("joinGroup").call(["id": groupId]) { (result, error) in
+            completion(result, error)
         }
     }
 }
