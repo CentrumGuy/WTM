@@ -11,6 +11,7 @@ import GoogleMaps
 import GooglePlaces
 import Firebase
 import FirebaseFunctions
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,15 +22,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var auth = Auth.auth()
     static var database = Database.database()
     static var storage = Storage.storage()
+    
+    static var groups = [Group]()
+    static var events = [Event]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyCNoNztzD3OXI3cZ8wpaKU63gJp8d2bOpo")
         GMSPlacesClient.provideAPIKey("AIzaSyCNoNztzD3OXI3cZ8wpaKU63gJp8d2bOpo")
         
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 100
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        
         if let name = UserDefaults.standard.string(forKey: "name"), let user = AppDelegate.auth.currentUser {
             AppDelegate.currentUser = UserX(uid: user.uid, email: user.email!, name: name)
         }
+        
+        /*let a = #imageLiteral(resourceName: "WTM")
+        Event.create(groupId: "EaKkSy", name: "cool event", location: "fdasf", latitude: 2.3, longitude: 4.2, description: "none bro", images: [a]) { (event) in
+        }*/
         return true
     }
 

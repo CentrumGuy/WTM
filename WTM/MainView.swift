@@ -127,5 +127,9 @@ class MainView: UIViewController, UICollectionViewDelegate, UICollectionViewData
             break
         }
     }
+    
+    @IBAction func showGroups(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "groups", sender: nil)
+    }
 }
 

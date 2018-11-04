@@ -33,7 +33,7 @@ class Group {
                 
                 if let image = image {
                     let jpeg = image.jpegData(compressionQuality: 0.5)!
-                    AppDelegate.storage.reference().child("groups").child(id).child("image").putData(jpeg, metadata: nil, completion: { (metadata, error) in
+                    Storage.storage().reference().child("groups").child(id).child("image").putData(jpeg, metadata: nil, completion: { (metadata, error) in
                         completion(group)
                     })
                     

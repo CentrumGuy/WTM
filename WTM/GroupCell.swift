@@ -11,4 +11,8 @@ import UIKit
 class GroupCell: UICollectionViewCell {
     @IBOutlet weak var groupImage: UIImageViewX!
     @IBOutlet weak var groupLabel: UILabel!
+    
+    override func awakeFromNib() {
+        groupImage.cornerRadius = groupImage.bounds.height / 2
+    }
 }

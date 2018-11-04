@@ -13,4 +13,5 @@ target 'WTM' do
   pod 'Firebase/Functions'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'IQKeyboardManagerSwift'
 end
