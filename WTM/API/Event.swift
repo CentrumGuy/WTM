@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseFunctions
+import FirebaseDatabase
 
 class Event {
     let eventId: String
@@ -17,7 +18,6 @@ class Event {
     let latitude: Double
     let longitude: Double
     let description: String
-    let imageCount: Int
     
     var images: [UIImage]?
     
@@ -30,27 +30,71 @@ class Event {
         self.longitude = longitude
         self.description = description
         self.images = images
-        self.imageCount = images.count
     }
     
     static func create (groupId: String, name: String, location: String, latitude: Double, longitude: Double, description: String, images: [UIImage], completion: @escaping (Event?) -> ()) {
         AppDelegate.functions.httpsCallable("addEvent").call(["id": groupId, "name": name, "display_location": location, "latitude": latitude, "longitude": longitude, "description": description, "image_count": images.count]) { (result, error) in
             print("given id", result?.data as? [String: Any])
             
-            let group = DispatchGroup()
-            group.enter()
-            var count = 0
-            for i in 0..<images.count {
-                AppDelegate.storage.reference().child("groups")
-            }
-            
             if let id = (result?.data as? [String: Any])?["id"] as? String {
                 let event = Event(eventId: id, groupId: groupId, name: name, location: location, latitude: latitude, longitude: longitude, description: description, images: images)
-                completion(event)
+                
+                let group = DispatchGroup()
+                group.enter()
+                var count = 0
+                for i in 0..<images.count {
+                    let jpegData = images[i].jpegData(compressionQuality: 0.5)!
+                    AppDelegate.storage.reference().child("groups").child(groupId).child("events").child(id).child("\(i)").putData(jpegData, metadata: nil, completion: { (metadata, error) in
+                        count += 1
+                        
+                        if count >= images.count {
+                            group.leave()
+                        }
+                        
+                    })
+                }
+                
+                group.notify(queue: DispatchQueue.main, execute: {
+                    completion(event)
+                })
                 return
             }
             
             completion(nil)
+        }
+    }
+    
+    func load(groupId: String, eventId: String, snapshot: DataSnapshot, completion: @escaping (Event?) -> ()) {
+        if !snapshot.hasChild(eventId) {
+            completion(nil)
+            return
+        }
+        
+        let snap = snapshot.childSnapshot(forPath: eventId)
+        let name = snap.childSnapshot(forPath: "name").value as! String
+        let location = snap.childSnapshot(forPath: "display_location").value as! String
+        let latitude = snap.childSnapshot(forPath: "latitude").value as! Double
+        let longitude = snap.childSnapshot(forPath: "longitude").value as! Double
+        let description = snap.childSnapshot(forPath: "description").value as! String
+        let targetPhotos = snap.childSnapshot(forPath: "image_count").value as! Int
+        
+        let group = DispatchGroup()
+        group.enter()
+        var images = [UIImage]()
+        for i in 0..<targetPhotos {
+            AppDelegate.storage.reference().child("groups").child(groupId).child("events").child(eventId).child("photos").child("\(i)").downloadURL { (url, error) in
+                UIImage.load(url: url!, completion: { (image) in
+                    images.append(image!)
+                    if images.count >= targetPhotos {
+                        group.leave()
+                    }
+                })
+            }
+        }
+        
+        group.notify(queue: DispatchQueue.main) {
+            let event = Event(eventId: eventId, groupId: groupId, name: name, location: location, latitude: latitude, longitude: longitude, description: description, images: images)
+            completion(event)
         }
     }
 }

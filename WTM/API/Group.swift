@@ -48,7 +48,7 @@ class Group {
         }
     }
     
-    func join(completion: @escaping (HTTPSCallableResult?, Error?) -> ()) {
+    static func join(groupId: Group, completion: @escaping (HTTPSCallableResult?, Error?) -> ()) {
         AppDelegate.functions.httpsCallable("joinGroup").call(["id": groupId]) { (result, error) in
             completion(result, error)
         }
