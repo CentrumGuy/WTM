@@ -36,6 +36,7 @@
 		C7461DE9218E6C4E00397311 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBC218E64DF00397311 /* Extensions.swift */; };
 		C7461DEA218E6C4E00397311 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBD218E64DF00397311 /* ViewUtils.swift */; };
 		C75201BA218ECC0800D1AD50 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75201B9218ECC0800D1AD50 /* Group.swift */; };
+		C75201BC218EDC0E00D1AD50 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75201BB218EDC0E00D1AD50 /* Event.swift */; };
 		C7F76C09218EC22700E2535E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F76C08218EC22700E2535E /* GoogleService-Info.plist */; };
 		C7F76C0B218EC2D900E2535E /* UserX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F76C0A218EC2D900E2535E /* UserX.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		C7461DCD218E64DF00397311 /* UISliderX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
 		C7461DCE218E6B4500397311 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		C75201B9218ECC0800D1AD50 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		C75201BB218EDC0E00D1AD50 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C7F76C08218EC22700E2535E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7F76C0A218EC2D900E2535E /* UserX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 			children = (
 				C7F76C0A218EC2D900E2535E /* UserX.swift */,
 				C75201B9218ECC0800D1AD50 /* Group.swift */,
+				C75201BB218EDC0E00D1AD50 /* Event.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				C7461DCF218E6B4500397311 /* GroupCell.swift in Sources */,
 				C7461DE2218E6C4900397311 /* UIGradientLabel.swift in Sources */,
 				C7461DD2218E6C3900397311 /* UIPickerX.swift in Sources */,
+				C75201BC218EDC0E00D1AD50 /* Event.swift in Sources */,
 				C7461DE4218E6C4900397311 /* UIImageViewX.swift in Sources */,
 				C7461DD3218E6C3B00397311 /* UIViewXRadialGradient.swift in Sources */,
 				C7F76C0B218EC2D900E2535E /* UserX.swift in Sources */,

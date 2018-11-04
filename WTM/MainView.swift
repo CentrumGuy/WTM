@@ -47,6 +47,10 @@ class MainView: UIViewController, UICollectionViewDelegate, UICollectionViewData
         currentEventState = .bottom
         let camera = GMSCameraPosition.camera(withLatitude: 33.7756, longitude: -84.3963, zoom: 16.0)
         mapView.camera = camera
+        
+        let a = #imageLiteral(resourceName: "noun_Mail_1215745")
+        Event.create(groupId: "EaKkSy", name: "An Awesome Event", location: "my house", latitude: 33.7756, longitude: -84.3963, description: "come to my house", images: [a]) { (event) in
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

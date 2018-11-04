@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var functions = Functions.functions()
     static var auth = Auth.auth()
     static var database = Database.database()
+    static var storage = Storage.storage()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
