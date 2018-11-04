@@ -36,6 +36,7 @@
 		C7461DE8218E6C4E00397311 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBB218E64DF00397311 /* ColorScheme.swift */; };
 		C7461DE9218E6C4E00397311 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBC218E64DF00397311 /* Extensions.swift */; };
 		C7461DEA218E6C4E00397311 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461DBD218E64DF00397311 /* ViewUtils.swift */; };
+		C75201BA218ECC0800D1AD50 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75201B9218ECC0800D1AD50 /* Group.swift */; };
 		C7F76C09218EC22700E2535E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F76C08218EC22700E2535E /* GoogleService-Info.plist */; };
 		C7F76C0B218EC2D900E2535E /* UserX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F76C0A218EC2D900E2535E /* UserX.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		C7461DCC218E64DF00397311 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
 		C7461DCD218E64DF00397311 /* UISliderX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
 		C7461DCE218E6B4500397311 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		C75201B9218ECC0800D1AD50 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		C7F76C08218EC22700E2535E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7F76C0A218EC2D900E2535E /* UserX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F76C0A218EC2D900E2535E /* UserX.swift */,
+				C75201B9218ECC0800D1AD50 /* Group.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				C71D7462218E907300828557 /* EventInformationView.swift in Sources */,
 				C7461DE6218E6C4900397311 /* UIVisualEffectViewX.swift in Sources */,
 				C7461DE1218E6C4900397311 /* UIViewAnchorPoint.swift in Sources */,
+				C75201BA218ECC0800D1AD50 /* Group.swift in Sources */,
 				C7461DE0218E6C4900397311 /* UILabelX.swift in Sources */,
 				C7461DE7218E6C4900397311 /* UISliderX.swift in Sources */,
 				C7461DD1218E6C3500397311 /* UIGradientImage.swift in Sources */,
@@ -508,7 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RHT3JYW75;
+				DEVELOPMENT_TEAM = SKLTWZD2Z5;
 				INFOPLIST_FILE = WTM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,7 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RHT3JYW75;
+				DEVELOPMENT_TEAM = SKLTWZD2Z5;
 				INFOPLIST_FILE = WTM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

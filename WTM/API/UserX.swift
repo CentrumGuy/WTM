@@ -20,12 +20,17 @@ class UserX {
         self.name = name
     }
     
-    static func create(email: String, password: String, name: String, completion: ((AuthDataResult?) -> ())?) {
+    static func create(email: String, password: String, name: String, completion: ((AuthDataResult?) -> ())? = nil) {
         AppDelegate.auth.createUser(withEmail: email, password: password) { (result, error) in
             if let result = result {
                 let user = result.user
                 let uid = user.uid
                 AppDelegate.database.reference().child("users").child(uid).child("name").setValue(name, withCompletionBlock: { (error, reference) in
+                    if error != nil {
+                        print(error!)
+                    }
+                    
+                    UserDefaults.standard.set(name, forKey: "name")
                     completion?(result)
                 })
                 
@@ -33,6 +38,27 @@ class UserX {
             }
             
             completion?(result)
+        }
+    }
+    
+    static func signIn(email: String, password: String, completion: ((UserX?) -> ())? = nil) {
+        AppDelegate.auth.signIn(withEmail: email, password: password) { (result, error) in
+            if let user = result?.user {
+                let uid = user.uid
+                AppDelegate.database.reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let name = snapshot.childSnapshot(forPath: "name").value as? String {
+                        let user = UserX(uid: uid, email: email, name: name)
+                        UserDefaults.standard.set(name, forKey: "name")
+                        completion?(user)
+                        return
+                    }
+                    
+                    completion?(nil)
+                })
+                return
+            }
+            
+            completion?(nil)
         }
     }
     
